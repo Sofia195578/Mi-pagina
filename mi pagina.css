@@ -38,29 +38,44 @@ body{
     width: 80%; 
 }
 
-.bloque1 img{
-    border-radius: 15px;
-    width: 100%;
-    height: auto;
+.bloque1 img {
+    border-radius: 15px; 
+    object-fit: cover; 
     border: 2px solid white;
 }
 
+.proyecto .img1, .proyecto .img2, .proyecto .img3, .proyecto .img4, .proyecto .img5{
+    width: 100%;
+    height:200px; 
+}
+.proyecto{
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+} 
+
 .proyecto-1{
     text-align: center; 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     font-family:monospace; 
-    margin: 0 auto; 
+    margin: auto; 
+    top: 0;
+    bottom: 0;
 }
 
+.proyecto:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9); 
+    background-color: #ffb6c1; 
+}
 
-.boton1, .boton2, .boton3, .boton4 {
+.boton1, .boton2, .boton3, .boton4, .boton5 {
     background-color: white;
     color: black;
     border: 1px solid black; 
     padding: 10px 15px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
     margin: 10px auto; 
     display: block; 
@@ -68,7 +83,7 @@ body{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover {
+.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover, .boton5:hover {
     transform: scale(1.1); 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
     background-color: #ffb6c1; 
@@ -76,16 +91,42 @@ body{
     border: 1px solid white;
 }
 
-@media (max-width: 700px) {
+@media(max-width:1440px){
+    .bloque1 img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .proyecto-1{
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .boton1, .boton2, .boton3, .boton4, .boton5 {
+        width: 80%; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
     .bloque1 {
         grid-template-columns: repeat(2, 1fr); 
-        gap: 30px; 
+        gap: 20px; 
         width: 90%; 
     }
 
     .bloque1 img {
         width: 100%; 
-        height: 100%
+        height: auto; 
+    }
+
+    .proyecto-1{
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 18px;
     }
 
     .div1 {
@@ -95,12 +136,11 @@ body{
 
     .div2 {
         font-size: 30px; 
-        padding-bottom: 30px;
+        padding-bottom: 0;
     }
 
-    .boton1, .boton2, .boton3, .boton4 {
+    .boton1, .boton2, .boton3, .boton4, .boton5 {
         width: 80%; 
-        font-size: 18px;
-        padding: 5px 10px;
+        font-size: 15px;
     }
 }
