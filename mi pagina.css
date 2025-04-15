@@ -39,15 +39,13 @@ body{
 }
 
 .bloque1 img {
-    border-radius: 15px; 
+    border-radius: 15px;
+    width: 100%;
+    height: 400px; 
     object-fit: cover; 
     border: 2px solid white;
 }
 
-.proyecto .img1, .proyecto .img2, .proyecto .img3, .proyecto .img4, .proyecto .img5{
-    width: 100%;
-    height:200px; 
-}
 .proyecto{
     border-radius: 4px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -55,7 +53,7 @@ body{
 
 .proyecto-1{
     text-align: center; 
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     font-family:monospace; 
@@ -70,12 +68,12 @@ body{
     background-color: #ffb6c1; 
 }
 
-.boton1, .boton2, .boton3, .boton4, .boton5 {
+.boton1, .boton2, .boton3, .boton4, .boton5, .boton6{
     background-color: white;
     color: black;
     border: 1px solid black; 
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 30px;
     border-radius: 5px;
     margin: 10px auto; 
     display: block; 
@@ -83,31 +81,12 @@ body{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover, .boton5:hover {
+.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover, .boton5:hover, .boton6:hover {
     transform: scale(1.1); 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
     background-color: #ffb6c1; 
     color: white; 
     border: 1px solid white;
-}
-
-@media(max-width:1440px){
-    .bloque1 img {
-        width: 100%; 
-        height: auto; 
-    }
-
-    .proyecto-1{
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        font-size: 18px;
-    }
-
-    .boton1, .boton2, .boton3, .boton4, .boton5 {
-        width: 80%; 
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 900px) {
