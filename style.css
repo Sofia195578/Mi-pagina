@@ -68,7 +68,7 @@ body{
     background-color: #ffb6c1; 
 }
 
-.boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7{
+.boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8{
     background-color: white;
     color: black;
     border: 1px solid black; 
@@ -81,7 +81,7 @@ body{
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover, .boton5:hover, .boton6:hover, .boton7:hover{
+.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover, .boton5:hover, .boton6:hover, .boton7:hover, .boton8:hover{
     transform: scale(1.1); 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
     background-color: #ffb6c1; 
@@ -118,7 +118,7 @@ body{
         padding-bottom: 0;
     }
 
-    .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7 {
+    .boton1, .boton2, .boton3, .boton4, .boton5, .boton6, .boton7, .boton8 {
         width: 80%; 
         font-size: 15px;
     }
